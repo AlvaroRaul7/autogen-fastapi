@@ -1,0 +1,6 @@
+ignore_patterns:
+  - 'venv/**'
+  - '**/__pycache__/**'
+  - '.git/**'
+  - '.env'
+  - '*.pyc' 

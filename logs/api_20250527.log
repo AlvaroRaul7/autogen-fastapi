@@ -1,0 +1,436 @@
+
+Time: 2025-05-27 14:43:49,886
+Logger: api
+Level: INFO
+File: documents.py:80
+Message: Processing query request: What are the key points discussed in the document?
+----------------------------------------
+
+Time: 2025-05-27 14:43:49,886
+Logger: api
+Level: INFO
+File: documents.py:84
+Message: Starting query enhancement with researcher agent
+----------------------------------------
+
+Time: 2025-05-27 14:43:55,916
+Logger: api
+Level: INFO
+File: documents.py:86
+Message: Query enhanced: Comprehensive summary and analysis of key points in the document
+----------------------------------------
+
+Time: 2025-05-27 14:43:55,916
+Logger: api
+Level: INFO
+File: documents.py:89
+Message: Generating embedding for enhanced query
+----------------------------------------
+
+Time: 2025-05-27 14:43:56,706
+Logger: api
+Level: INFO
+File: documents.py:93
+Message: Searching for relevant chunks (limit: 5)
+----------------------------------------
+
+Time: 2025-05-27 14:43:57,218
+Logger: api
+Level: ERROR
+File: documents.py:120
+Message: Error processing query: {'message': 'column reference "id" is ambiguous', 'code': '42702', 'hint': None, 'details': 'It could refer to either a PL/pgSQL variable or a table column.'}
+----------------------------------------
+Traceback (most recent call last):
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/app/routers/documents.py", line 94, in query_documents
+    chunks = await supabase_service.search_similar_chunks(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/app/services/supabase_service.py", line 30, in search_similar_chunks
+    ).execute()
+      ^^^^^^^^^
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 126, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'column reference "id" is ambiguous', 'code': '42702', 'hint': None, 'details': 'It could refer to either a PL/pgSQL variable or a table column.'}
+
+Time: 2025-05-27 14:45:13,930
+Logger: api
+Level: INFO
+File: documents.py:80
+Message: Processing query request: What are the key points discussed in the document?
+----------------------------------------
+
+Time: 2025-05-27 14:45:13,930
+Logger: api
+Level: INFO
+File: documents.py:84
+Message: Starting query enhancement with researcher agent
+----------------------------------------
+
+Time: 2025-05-27 14:45:23,692
+Logger: api
+Level: INFO
+File: documents.py:86
+Message: Query enhanced: "Detailed outline and succinct summary of principal themes in the document"
+----------------------------------------
+
+Time: 2025-05-27 14:45:23,692
+Logger: api
+Level: INFO
+File: documents.py:89
+Message: Generating embedding for enhanced query
+----------------------------------------
+
+Time: 2025-05-27 14:45:23,972
+Logger: api
+Level: INFO
+File: documents.py:93
+Message: Searching for relevant chunks (limit: 5)
+----------------------------------------
+
+Time: 2025-05-27 14:45:24,242
+Logger: api
+Level: ERROR
+File: documents.py:120
+Message: Error processing query: {'message': 'JSON could not be generated', 'code': 414, 'hint': 'Refer to full message for details', 'details': "b'<html>\\r\\n<head><title>414 Request-URI Too Large</title></head>\\r\\n<body>\\r\\n<center><h1>414 Request-URI Too Large</h1></center>\\r\\n<hr><center>cloudflare</center>\\r\\n</body>\\r\\n</html>\\r\\n'"}
+----------------------------------------
+Traceback (most recent call last):
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 77, in execute
+    json_obj = APIErrorFromJSON.model_validate_json(r.content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/venv/lib/python3.12/site-packages/pydantic/main.py", line 746, in model_validate_json
+    return cls.__pydantic_validator__.validate_json(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for APIErrorFromJSON
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value=b'<html>\r\n<head><title>...n</body>\r\n</html>\r\n', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.11/v/json_invalid
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/app/routers/documents.py", line 94, in query_documents
+    chunks = await supabase_service.search_similar_chunks(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/app/services/supabase_service.py", line 32, in search_similar_chunks
+    result = query.execute()
+             ^^^^^^^^^^^^^^^
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 80, in execute
+    raise APIError(generate_default_error_message(r))
+postgrest.exceptions.APIError: {'message': 'JSON could not be generated', 'code': 414, 'hint': 'Refer to full message for details', 'details': "b'<html>\\r\\n<head><title>414 Request-URI Too Large</title></head>\\r\\n<body>\\r\\n<center><h1>414 Request-URI Too Large</h1></center>\\r\\n<hr><center>cloudflare</center>\\r\\n</body>\\r\\n</html>\\r\\n'"}
+
+Time: 2025-05-27 14:47:42,182
+Logger: api
+Level: INFO
+File: documents.py:80
+Message: Processing query request: What are the key points discussed in the document?
+----------------------------------------
+
+Time: 2025-05-27 14:47:42,182
+Logger: api
+Level: INFO
+File: documents.py:84
+Message: Starting query enhancement with researcher agent
+----------------------------------------
+
+Time: 2025-05-27 14:47:50,283
+Logger: api
+Level: INFO
+File: documents.py:86
+Message: Query enhanced: "Comprehensive overview and detailed summary of key points and notable highlights within the document"
+----------------------------------------
+
+Time: 2025-05-27 14:47:50,284
+Logger: api
+Level: INFO
+File: documents.py:89
+Message: Generating embedding for enhanced query
+----------------------------------------
+
+Time: 2025-05-27 14:47:50,621
+Logger: api
+Level: INFO
+File: documents.py:93
+Message: Searching for relevant chunks (limit: 5)
+----------------------------------------
+
+Time: 2025-05-27 14:47:50,984
+Logger: api
+Level: ERROR
+File: documents.py:120
+Message: Error processing query: {'message': 'column reference "embedding" is ambiguous', 'code': '42702', 'hint': None, 'details': 'It could refer to either a PL/pgSQL variable or a table column.'}
+----------------------------------------
+Traceback (most recent call last):
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/app/routers/documents.py", line 94, in query_documents
+    chunks = await supabase_service.search_similar_chunks(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/app/services/supabase_service.py", line 31, in search_similar_chunks
+    ).execute()
+      ^^^^^^^^^
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 126, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'column reference "embedding" is ambiguous', 'code': '42702', 'hint': None, 'details': 'It could refer to either a PL/pgSQL variable or a table column.'}
+
+Time: 2025-05-27 14:49:52,361
+Logger: api
+Level: INFO
+File: documents.py:80
+Message: Processing query request: What are the key points discussed in the document?
+----------------------------------------
+
+Time: 2025-05-27 14:49:52,361
+Logger: api
+Level: INFO
+File: documents.py:84
+Message: Starting query enhancement with researcher agent
+----------------------------------------
+
+Time: 2025-05-27 14:50:04,428
+Logger: api
+Level: INFO
+File: documents.py:86
+Message: Query enhanced: "Comprehensive analysis of major topics and detailed summary of essential points in the document"
+----------------------------------------
+
+Time: 2025-05-27 14:50:04,428
+Logger: api
+Level: INFO
+File: documents.py:89
+Message: Generating embedding for enhanced query
+----------------------------------------
+
+Time: 2025-05-27 14:50:04,840
+Logger: api
+Level: INFO
+File: documents.py:93
+Message: Searching for relevant chunks (limit: 5)
+----------------------------------------
+
+Time: 2025-05-27 14:50:05,354
+Logger: api
+Level: INFO
+File: documents.py:103
+Message: Found 1 relevant chunks
+----------------------------------------
+
+Time: 2025-05-27 14:50:05,354
+Logger: api
+Level: INFO
+File: documents.py:106
+Message: Starting chunk analysis with analyst agent
+----------------------------------------
+
+Time: 2025-05-27 14:50:59,829
+Logger: api
+Level: INFO
+File: documents.py:108
+Message: Chunk analysis completed
+----------------------------------------
+
+Time: 2025-05-27 14:50:59,829
+Logger: api
+Level: INFO
+File: documents.py:114
+Message: Query processing completed successfully
+----------------------------------------
+
+Time: 2025-05-27 14:53:00,764
+Logger: api
+Level: INFO
+File: documents.py:36
+Message: Processing PDF from URL: https://drive.google.com/file/d/1geVuFsqd6gzMiHBZwV63aYjEieFUbMSi/view?usp=sharing
+----------------------------------------
+
+Time: 2025-05-27 14:53:00,765
+Logger: api
+Level: INFO
+File: documents.py:40
+Message: Starting PDF download and processing
+----------------------------------------
+
+Time: 2025-05-27 14:53:01,286
+Logger: api
+Level: ERROR
+File: documents.py:64
+Message: Error processing PDF: Stream has ended unexpectedly
+----------------------------------------
+Traceback (most recent call last):
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/app/routers/documents.py", line 41, in process_pdf
+    chunks = await pdf_service.process_pdf_url(str(request.url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/app/services/pdf_service.py", line 38, in process_pdf_url
+    text = await self.extract_text(pdf_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/app/services/pdf_service.py", line 25, in extract_text
+    reader = PdfReader(pdf_file)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 136, in __init__
+    self._initialize_stream(stream)
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 158, in _initialize_stream
+    self.read(stream)
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 593, in read
+    self._find_eof_marker(stream)
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 699, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alvaroraul7/Documents/Projects/autogen_poc/venv/lib/python3.12/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+
+Time: 2025-05-27 14:54:41,520
+Logger: api
+Level: INFO
+File: documents.py:36
+Message: Processing PDF from URL: https://drive.google.com/file/d/1geVuFsqd6gzMiHBZwV63aYjEieFUbMSi/view?usp=sharing
+----------------------------------------
+
+Time: 2025-05-27 14:54:41,520
+Logger: api
+Level: INFO
+File: documents.py:40
+Message: Starting PDF download and processing
+----------------------------------------
+
+Time: 2025-05-27 14:54:45,291
+Logger: api
+Level: INFO
+File: documents.py:42
+Message: Successfully processed PDF into 3 chunks
+----------------------------------------
+
+Time: 2025-05-27 14:54:45,292
+Logger: api
+Level: INFO
+File: documents.py:45
+Message: Starting embedding generation and storage
+----------------------------------------
+
+Time: 2025-05-27 14:54:48,291
+Logger: api
+Level: INFO
+File: documents.py:58
+Message: PDF processing completed successfully
+----------------------------------------
+
+Time: 2025-05-27 14:56:40,820
+Logger: api
+Level: INFO
+File: documents.py:80
+Message: Processing query request: What is Babson Challenge?
+----------------------------------------
+
+Time: 2025-05-27 14:56:40,821
+Logger: api
+Level: INFO
+File: documents.py:84
+Message: Starting query enhancement with researcher agent
+----------------------------------------
+
+Time: 2025-05-27 14:56:48,510
+Logger: api
+Level: INFO
+File: documents.py:86
+Message: Query enhanced: Comprehensive details on the structure, objectives, and key features of the Babson College Entrepreneurship Challenge
+----------------------------------------
+
+Time: 2025-05-27 14:56:48,510
+Logger: api
+Level: INFO
+File: documents.py:89
+Message: Generating embedding for enhanced query
+----------------------------------------
+
+Time: 2025-05-27 14:56:48,843
+Logger: api
+Level: INFO
+File: documents.py:93
+Message: Searching for relevant chunks (limit: 5)
+----------------------------------------
+
+Time: 2025-05-27 14:56:49,323
+Logger: api
+Level: INFO
+File: documents.py:103
+Message: Found 2 relevant chunks
+----------------------------------------
+
+Time: 2025-05-27 14:56:49,323
+Logger: api
+Level: INFO
+File: documents.py:106
+Message: Starting chunk analysis with analyst agent
+----------------------------------------
+
+Time: 2025-05-27 14:58:25,391
+Logger: api
+Level: INFO
+File: documents.py:108
+Message: Chunk analysis completed
+----------------------------------------
+
+Time: 2025-05-27 14:58:25,392
+Logger: api
+Level: INFO
+File: documents.py:114
+Message: Query processing completed successfully
+----------------------------------------
+
+Time: 2025-05-27 15:03:05,945
+Logger: api
+Level: INFO
+File: documents.py:80
+Message: Processing query request: What is Babson Challenge?
+----------------------------------------
+
+Time: 2025-05-27 15:03:05,946
+Logger: api
+Level: INFO
+File: documents.py:84
+Message: Starting query enhancement with researcher agent
+----------------------------------------
+
+Time: 2025-05-27 15:03:14,225
+Logger: api
+Level: INFO
+File: documents.py:86
+Message: Query enhanced: Description and goals of the Babson College Entrepreneurship Challenge
+----------------------------------------
+
+Time: 2025-05-27 15:03:14,225
+Logger: api
+Level: INFO
+File: documents.py:89
+Message: Generating embedding for enhanced query
+----------------------------------------
+
+Time: 2025-05-27 15:03:14,873
+Logger: api
+Level: INFO
+File: documents.py:93
+Message: Searching for relevant chunks (limit: 5)
+----------------------------------------
+
+Time: 2025-05-27 15:03:15,292
+Logger: api
+Level: INFO
+File: documents.py:103
+Message: Found 2 relevant chunks
+----------------------------------------
+
+Time: 2025-05-27 15:03:15,292
+Logger: api
+Level: INFO
+File: documents.py:106
+Message: Starting chunk analysis with analyst agent
+----------------------------------------
+
+Time: 2025-05-27 15:04:52,693
+Logger: api
+Level: INFO
+File: documents.py:108
+Message: Chunk analysis completed
+----------------------------------------
+
+Time: 2025-05-27 15:04:52,693
+Logger: api
+Level: INFO
+File: documents.py:114
+Message: Query processing completed successfully
+----------------------------------------
