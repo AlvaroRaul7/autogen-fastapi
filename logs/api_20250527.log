@@ -434,3 +434,143 @@ Level: INFO
 File: documents.py:114
 Message: Query processing completed successfully
 ----------------------------------------
+
+Time: 2025-05-27 15:46:31,808
+Logger: api
+Level: INFO
+File: documents.py:36
+Message: Processing PDF from URL: https://drive.google.com/file/d/11_ihSCF4fnDonqV533tSa-3mYe0V3OGD/view
+----------------------------------------
+
+Time: 2025-05-27 15:46:31,808
+Logger: api
+Level: INFO
+File: documents.py:40
+Message: Starting PDF download and processing
+----------------------------------------
+
+Time: 2025-05-27 15:46:41,677
+Logger: api
+Level: INFO
+File: documents.py:42
+Message: Successfully processed PDF into 10 chunks
+----------------------------------------
+
+Time: 2025-05-27 15:46:41,677
+Logger: api
+Level: INFO
+File: documents.py:45
+Message: Starting embedding generation and storage
+----------------------------------------
+
+Time: 2025-05-27 15:46:48,852
+Logger: api
+Level: INFO
+File: documents.py:58
+Message: PDF processing completed successfully
+----------------------------------------
+
+Time: 2025-05-27 15:48:01,980
+Logger: api
+Level: INFO
+File: documents.py:80
+Message: Processing query request: Cual es el menu del restaurante la herradura?
+----------------------------------------
+
+Time: 2025-05-27 15:48:01,980
+Logger: api
+Level: INFO
+File: documents.py:84
+Message: Starting query enhancement with researcher agent
+----------------------------------------
+
+Time: 2025-05-27 15:48:18,864
+Logger: api
+Level: INFO
+File: documents.py:86
+Message: Query enhanced: "Menú completo y actualizado del restaurante La Herradura 2023: precios, fotos y especialidades"
+----------------------------------------
+
+Time: 2025-05-27 15:48:18,864
+Logger: api
+Level: INFO
+File: documents.py:89
+Message: Generating embedding for enhanced query
+----------------------------------------
+
+Time: 2025-05-27 15:48:19,234
+Logger: api
+Level: INFO
+File: documents.py:93
+Message: Searching for relevant chunks (limit: 5)
+----------------------------------------
+
+Time: 2025-05-27 15:48:19,444
+Logger: api
+Level: INFO
+File: documents.py:100
+Message: No relevant chunks found
+----------------------------------------
+
+Time: 2025-05-27 15:49:49,688
+Logger: api
+Level: INFO
+File: documents.py:80
+Message: Processing query request: que contiene la picada la herradura?
+----------------------------------------
+
+Time: 2025-05-27 15:49:49,688
+Logger: api
+Level: INFO
+File: documents.py:84
+Message: Starting query enhancement with researcher agent
+----------------------------------------
+
+Time: 2025-05-27 15:50:00,961
+Logger: api
+Level: INFO
+File: documents.py:86
+Message: Query enhanced: Detalles completos de los ingredientes incluidos en la picada La Herradura
+----------------------------------------
+
+Time: 2025-05-27 15:50:00,962
+Logger: api
+Level: INFO
+File: documents.py:89
+Message: Generating embedding for enhanced query
+----------------------------------------
+
+Time: 2025-05-27 15:50:01,209
+Logger: api
+Level: INFO
+File: documents.py:93
+Message: Searching for relevant chunks (limit: 5)
+----------------------------------------
+
+Time: 2025-05-27 15:50:01,538
+Logger: api
+Level: INFO
+File: documents.py:103
+Message: Found 1 relevant chunks
+----------------------------------------
+
+Time: 2025-05-27 15:50:01,538
+Logger: api
+Level: INFO
+File: documents.py:106
+Message: Starting chunk analysis with analyst agent
+----------------------------------------
+
+Time: 2025-05-27 15:51:37,331
+Logger: api
+Level: INFO
+File: documents.py:108
+Message: Chunk analysis completed
+----------------------------------------
+
+Time: 2025-05-27 15:51:37,331
+Logger: api
+Level: INFO
+File: documents.py:114
+Message: Query processing completed successfully
+----------------------------------------

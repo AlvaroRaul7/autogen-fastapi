@@ -404,3 +404,115 @@ Level: INFO
 File: inform.py:179
 Message: Chunk analysis completed
 ----------------------------------------
+
+Time: 2025-05-27 15:44:27,673
+Logger: autogen
+Level: INFO
+File: base.py:17
+Message: Initializing InformAgent
+----------------------------------------
+
+Time: 2025-05-27 15:44:27,712
+Logger: autogen
+Level: INFO
+File: base.py:40
+Message: User proxy agent initialized
+----------------------------------------
+
+Time: 2025-05-27 15:44:27,719
+Logger: autogen
+Level: INFO
+File: inform.py:21
+Message: Initializing InformAgent's specialized agents
+----------------------------------------
+
+Time: 2025-05-27 15:44:27,789
+Logger: autogen
+Level: INFO
+File: base.py:44
+Message: Initialized 2 specific agents
+----------------------------------------
+
+Time: 2025-05-27 15:48:01,980
+Logger: autogen
+Level: INFO
+File: inform.py:81
+Message: Processing query enhancement operation
+----------------------------------------
+
+Time: 2025-05-27 15:48:01,980
+Logger: autogen
+Level: INFO
+File: inform.py:92
+Message: Starting query enhancement process
+----------------------------------------
+
+Time: 2025-05-27 15:48:18,863
+Logger: autogen
+Level: INFO
+File: inform.py:99
+Message: Query enhancement completed
+----------------------------------------
+
+Time: 2025-05-27 15:49:49,688
+Logger: autogen
+Level: INFO
+File: inform.py:81
+Message: Processing query enhancement operation
+----------------------------------------
+
+Time: 2025-05-27 15:49:49,688
+Logger: autogen
+Level: INFO
+File: inform.py:92
+Message: Starting query enhancement process
+----------------------------------------
+
+Time: 2025-05-27 15:50:00,961
+Logger: autogen
+Level: INFO
+File: inform.py:99
+Message: Query enhancement completed
+----------------------------------------
+
+Time: 2025-05-27 15:50:01,539
+Logger: autogen
+Level: INFO
+File: inform.py:119
+Message: Processing chunk analysis operation
+----------------------------------------
+
+Time: 2025-05-27 15:50:01,539
+Logger: autogen
+Level: INFO
+File: inform.py:128
+Message: Processing batch 1 of 1
+----------------------------------------
+
+Time: 2025-05-27 15:50:01,539
+Logger: autogen
+Level: INFO
+File: inform.py:147
+Message: Starting analysis of batch 1
+----------------------------------------
+
+Time: 2025-05-27 15:50:52,109
+Logger: autogen
+Level: INFO
+File: inform.py:161
+Message: All batch analyses completed
+----------------------------------------
+
+Time: 2025-05-27 15:50:52,109
+Logger: autogen
+Level: INFO
+File: inform.py:172
+Message: Generating final summary
+----------------------------------------
+
+Time: 2025-05-27 15:51:37,331
+Logger: autogen
+Level: INFO
+File: inform.py:179
+Message: Chunk analysis completed
+----------------------------------------
